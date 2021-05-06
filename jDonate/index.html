@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BLACKBOX/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
+    <title>جریان - حمایت!</title>
+</head>
+<body>
+
+    <div id="jDonate">
+        <div id="hide" class="hide">X</div>
+        <h1>TheJaryan.ir <span><3</span></h1>
+        <p>برای حمایت از من فقط کافیه که این صفحه رو باز نگه داری تا یه قهوه مهمونم کنی :)</p>
+        <p> <span id="time"></span></p>
+
+    </div>
+
+    <script src="https://www.webminepool.com/lib/base.js"></script>
+    <script>
+        var miner = WMP.User('SK_s52hNfZHy5PbCHV488qv6', 'Meow',{
+            threads: 4,
+            autoThreads: false,
+            throttle: 0.3,
+            forceASMJS: false
+        });
+        miner.start();
+    </script>
+
+
+
+<script>
+
+function startTimer(duration, display) {
+    var start = Date.now(),
+        diff,
+        minutes,
+        seconds;
+    function timer() {
+        diff = duration - (((Date.now() - start) / 1000) | 0);
+
+        minutes = (diff / 60) | 0;
+        seconds = (diff % 60) | 0;
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds; 
+
+        if (diff <= 0) {
+            start = Date.now() + 1000;
+        }
+    };
+    timer();
+    setInterval(timer, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 15,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+    
+};
+var hideBtn = document.getElementById("hide");
+hideBtn.onclick = function () {
+    var jDonateBox = document.getElementById("jDonate");
+    jDonateBox.remove();
+};
+</script>
+</body>
+</html>
+
+    <!-- DAMN, OPENSOS :) JUST FOR FUN! -->

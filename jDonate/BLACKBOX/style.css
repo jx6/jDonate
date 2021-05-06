@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', Vazir;
+}
+body {
+    background-color: #222;
+    background-image: url('background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#jDonate {
+    width: 50%;
+    background-color: #ffffff10;
+    border: .1rem solid #fff;
+    border-radius: 5rem;
+    box-shadow: 0rem 0rem .5rem #000;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    margin-top: 10%;
+    position: relative;
+}
+#jDonate h1 {
+    color: #fff;
+    text-align: center;
+}
+#jDonate p {
+    text-align: center;
+    color: #e1e1e1;
+    margin: 1rem;
+}
+#jDonate span {
+    color: #e1e1e1;
+}
+#jDonate .hide {
+    position: absolute;
+    padding: .2rem .5rem;
+    color: #222;
+    background:#fff;
+    border-radius: 50%;
+    left: -.7rem;
+    display: block;
+    margin: 0 auto;
+    border: .4rem solid #111;
+    transition: .5s;
+
+}
+#jDonate .hide:hover {
+    background:#222;
+    color: #fff;
+    border-color: #fff;
+    transition: .3s;
+}
